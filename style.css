@@ -1,0 +1,227 @@
+
+
+
+
+
+body {
+  background-color: rgb(250, 91, 91);
+
+}
+
+.main_page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 70vh;
+  background-image: url(./images/network.jpg);
+  object-fit: contain;
+
+}
+
+#h3{
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  color: aliceblue;
+  border: 2px solid;
+  border-radius: 30px;
+  background-color: rgba(1, 18, 71, 0.658);
+}
+
+#headline {
+  display: flex;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 900%;
+  color: aliceblue;
+  border: 2px solid;
+  border-radius: 30px;
+  background-color: rgba(1, 18, 71, 0.658);
+
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 21rem;
+  background-color: rgb(58, 57, 57);
+  position: relative;
+  margin: auto;
+
+
+}
+
+
+.container_img {
+  width: 37rem;
+  height: 21rem;
+  background-color: aqua;
+}
+
+.container_img img {
+
+  object-fit: contain;
+  width: 70%;
+  height: 21rem;
+  object-fit: cover;
+  border-radius: 30px;
+  background-color: chocolate;
+
+
+
+}
+
+
+.note {
+  display: block;
+  margin: auto;
+
+  width: 95%;
+  height: fit-content;
+  background-color: yellow;
+  text-align: center;
+  z-index: 1;
+  position: fixed;
+}
+
+.container2 {
+  display: none;
+  flex-direction: column;
+  width: 700px;
+  height: fit-content;
+  background-color: aquamarine;
+  margin: auto;
+  gap: 1rem;
+  border: 2px solid ;
+ 
+}
+
+.container2 h3 {
+  background-color: rgb(230, 244, 99);
+  color: rgb(0, 0, 0);
+}
+
+.container2 img {
+  object-fit: contain;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 30px;
+  background-color: chocolate;
+  margin: auto;
+  border: 2px solid;
+
+
+
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  background-color: rgb(228, 183, 124);
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
+  text-align: center;
+  align-content: center;
+
+}
+
+
+.contact form {
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+  background-color: aqua;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.contact label {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  flex-direction: column;
+  height: fit-content;
+  background-color: chartreuse;
+
+
+}
+
+
+/* chat */
+
+
+.chat_container {
+  width: 50%;
+  height: 70vh;
+  background-color: chartreuse;
+  margin: auto;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: rgb(203, 154, 249);
+  width: fit-content;
+  padding: 7px;
+  margin: 7px 3px;
+  border-radius: 3px;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+.send {
+  text-align: center;
+}
+
+#messageInp {
+  width: 45%;
+  height: 1.3rem;
+  border-radius: 7px;
+}
+
+.btn {
+  width: 3.3rem;
+  height: 1.7rem;
+  border-radius: 9px;
+
+
+}
+
+@media screen and (max-width:435px) {
+  #home{
+    /* width: max-content; */
+    /* background-image: url(nwtwork.jpg.jpg); */
+    margin: auto;
+    object-fit: cover;
+  }
+  #headline{
+      text-align: center;
+    font-size:300%;
+
+  }
+  
+}

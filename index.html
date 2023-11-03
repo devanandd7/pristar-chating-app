@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pristar</title>
+    <script defer src="./images/http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="./images/clint.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="main"class="main_page" >
+      <div id="home">
+        <h1 id="headline">PriStar</h1>
+        <h3 id="h3">chat website</h3>
+      </div>
+
+      <div id="learn" style="margin: auto;">
+        <div style="margin: auto">
+          <h2>
+            click on the button to do mess..
+            <a href="#cont"><button>click</button></a>
+          </h2>
+          <h2>
+            Learn, how you can chat with me
+            <button onclick="show_learn()">click me</button>
+          </h2>
+        </div>
+
+        <div id="container2" class="container2" onclick="visibleoff()">
+          <h2>* Learn how to do chat</h2>
+
+          <h3>1. niche ,mess wale icon pe click kre</h3>
+          <img src="./images/tawk1.jpg" alt="" />
+
+          <h3>
+            2. aisa interface aaye ,jisme <br />
+            <br />
+            name : apna nam dale ,(aap kuchh bhi dal skte h ,as bubu...) <br />
+            <br />email: email ke jgh pr kuchh bhi dal skte h ,bs last me
+            @gmail.com lga hona chahiye .( abcd@gmail.com) <br /><br />
+            message : isme kuchh bhi likh de ,as good, bad..etc
+          </h3>
+          <img src="./images/tawk2.jpg" alt="" />
+
+          <h3>3. jaise isme dala hua h or uske bad ,Submit pr click kre</h3>
+          <img src="./images/tawk3.jpg" alt="" />
+
+          <h3>
+            4. to aisa interface aayega , isme uper aa rhe , X ke nisan pe click
+            kre
+          </h3>
+          <img src="./images/tawk4.jpg" alt="" />
+
+          <h3>
+            5. mere duara mess krne pe message wala icon pe 1,2 likha hua no
+            aaega
+          </h3>
+          <img src="./images/tawk10.jpg" alt="" />
+
+          <h3>6. message icon pe click krne pr ,aisa iterface aayega</h3>
+          <img src="./images/tawk5.jpg" alt="" />
+
+          <h3>7. david pe click re</h3>
+          <img src="./images/tawk5.jpg" alt="" />
+
+          <h3>8. or yha mere se bat kre</h3>
+          <img src="./images/tawk6.jpg" alt="" />
+
+          <h3>
+            9. chat end krna ho to ,3 line pe click kre <br /><br />
+            or end this chat session pe click kre .
+          </h3>
+          <img src="./images/tawk9.jpg" alt="" />
+        </div>
+      </div>
+
+      <div id="cont" class="contact">
+        <h1>here, you can send me message :)</h1>
+
+        <form name="contact" netlify>
+          <p>
+            <label>Name<input type="text" name="name" /></label>
+          </p>
+
+          <p>
+            <label
+              >message
+              <textarea name="mess" id="" cols="30" rows="10"></textarea>
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var learn = document.getElementById("container2");
+
+    // show instraction box
+    function show_learn() {
+      if ((learn.style.display = "none")) {
+        learn.style.display = "flex"
+      } 
+    }
+
+    // close instraction box
+    function visibleoff(){
+        if ((learn.style.display = "flex")) {
+        learn.style.display = "none"
+      } 
+    }
+
+  </script>
+
+ <!-- copy paste this code from tawk.to -->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/64b02cdfcc26a871b0283a88/1h582uio8";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</html>
